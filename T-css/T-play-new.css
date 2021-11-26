@@ -4,8 +4,6 @@ padding: 0;
 }
 header{
     height: 75px;
-
-  
     background-color: blanchedalmond;
 }
 .T-faxiankuwan{
@@ -107,5 +105,19 @@ span .T-on
     padding-left:20px;
    
 }
+#yiru{
+    cursor:pointer;
+    animation:shan .8s infinite linear alternate;
+}
+@keyframes shan {
+    0% {background-color: white;}
+    100% {background-color: rgba(168, 168, 167, 0.26);}
+  }
+
+#jiazai{
+    background: url(../img/loading-icon.gif) no-repeat ;
+}
+  
+  
 
 
