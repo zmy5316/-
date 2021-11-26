@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+padding: 0;
+}
+
+.T-main{
+    margin-top: 50px;
+    color: rgb(83, 83, 83);
+   
+}
+.T-left{
+     background-color:rgb(243, 243, 243) ;
+     width: 270px;
+     margin-left: 260px;
+     border-radius: 8px;
+     padding-bottom: 40px;
+     float: left;
+     
+}
+.T-left span ,.T-right span{
+    display: block;
+  margin:0px 0 10px 50px ;
+  line-height: 30px;
+}
+.T-title-1{
+    font-size: 20px;
+    font-weight: 700;
+    padding:30px 0 5px 20px;
+    margin: 0 20px;
+    color: rgb(68, 68, 68);
+    border-bottom: 1px solid rgb(170, 170, 170);
+}
+.T-title-2{
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 30px;
+    color: rgb(83, 83, 83);
+    padding: 10px 0 10px 10px;
+}
+
+
+.T-right{
+    background-color:rgb(243, 243, 243) ;
+    width: 700px;
+    margin-left: 30px;
+    border-radius: 8px;
+    padding-bottom: 40px;
+    float: left;
+ 
+   
+ 
+}
+.T-right  .T-title-2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
