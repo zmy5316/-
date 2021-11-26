@@ -18,13 +18,18 @@
 }
 .T-wrap{
     margin: 0 auto;
-    transform: translateY(20px);
     width: 1000px;
-    border: 1px solid rgba(204, 204, 204, 0.705);
     overflow: hidden;
     border-radius: 10px;
-    background-color:white ;
+   padding-bottom: 40px;
    
+}
+.T-wrap ul li{ 
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 1px solid rgba(204, 204, 204, 0.466);
+    background-color:white ;
+    padding-bottom: 40px;
 }
 .T-wrap dt{
     margin-top: 20px;
@@ -35,9 +40,7 @@
     height: 25px;
     background-color: rgb(254, 84, 49);
     content: '';
-    position: absolute;
-    left: 0;
-    top: 19px;
+  transform: translate(-30px,24px);
     display: block;
     width: 6px;
     height: 25px;
@@ -63,7 +66,7 @@
     border-bottom: 1px dashed rgba(204, 204, 204, 0.705);
     padding-bottom: 15px;
     margin-top: 20px;
-    margin-left: 15px;
+    padding-left: 15px;
 }
 
 .T-wrap dd:nth-of-type(2) .list{
