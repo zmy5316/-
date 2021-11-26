@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../z-css/z-.7导购详情页.css">
+</head>
+
+<body>
+    <!-- 头部-->
+    <header>
+        <a name=""></a>
+        <!-- 左边logo -->
+        <div class="z-left">
+            <a href=""><img src="../z-img/logonew.png" width="150px" height="70px"></a>
+
+        </div>
+        <!-- 首页标题 -->
+        <ul class="z-middle">
+            <li><a href="">首页</a></li>
+            <li><a href="">酷玩</a></li>
+            <li><a href="">导购</a></li>
+            <li><a href="">试用</a></li>
+            <li><a href="">报告</a></li>
+        </ul>
+        <!-- 右边注册栏 -->
+        <div class="z-right">
+            <a href="#" class="z-login">注册</a>
+            <!-- <a href="#" class="z-search">搜索</a> -->
+        </div>
+    </header>
+    <div class="z-all">
+        <!-- 导航栏 -->
+        <div class="z-nav">
+            <p>首页>导购>最新>2016,这八支钢笔够你装逼一整年</p>
+        </div>
+        <div class="z-toubu1">
+            <h2>2016,这八支钢笔够你装逼一整年</h2>
+            <p>
+                <span>苏苏</span>
+                <span>2016-01-25</span>
+            </p>
+            <hr>
+
+            <div class="z-toubu2">
+                <p>钢笔，作为一个书写工具,像手表一样，不但具有功能性,还拥有了装饰(bi)等功能。不过总有人在死</p>
+                <p>磕钢笔的本质:</p>
+                <p><img src="../z-img/detail.jpg"> </p>
+
+            </div>
+        </div>
+        <button onclick="showData()"></button>
+        <ul class="list">
+            <!-- <li>
+                <p>选一支钢笔</p>
+                <p>初次使用钢笔该如何选择,这是个老生常谈的问题了，具体其实没什么好讲的 ,因为不但那些昂贵的钢笔，每支都有自己的个性,相对廉价的钢笔更是如此。所以还是要尽量自已去实体店尝试,看看手感是否适合自己</p>
+
+            </li>
+
+        </ul> -->
+    </div>
+    <div class="z-seventh">
+        <ul>
+            <li>
+                <img src="../z-img/code.png">
+            </li>
+            <li>
+                <img src="../z-img/logoImg.jpg">
+                <p>全球酷玩试用导购平台</p>
+                <p>酷 新奇 好玩 品质</p>
+                <p>微信添加"JquoJguo"</p>
+                <p>获取我们服务</p>
+            </li>
+            <li><a href="">
+                    <h3>免费试用</h3>
+                    <p>试用流程</p>
+                    <p>如何提高成功率</p>
+                </a>
+
+            </li>
+            <li>
+                <h3>友情链接</h3>
+                <p>智东西 WEIBUSI</p>
+                <p> 搜狐IT 腾讯科技</p>
+                <p>搜狐数码 凤凰科技</p>
+                <p>泡泡网 PConline</p>
+                <p>ZUK社区 3W咖啡</p>
+                <p>极客公园 亿觅emie</p>
+                <p>果酷 易迅易启玩</p>
+            </li>
+            <li>
+                <h3>购买攻略</h3>
+                <p>美亚海淘教程</p>
+                <p>日亚海淘教程</p>
+                <p>海淘转运攻略</p>
+                <p>kickstarter众筹购买攻略</p>
+                <p>indiegogo众筹购买攻略</p>
+            </li>
+            <li>
+                <a href="">
+                    <h3>厂商合作</h3>
+                    <p>关于极果</p>
+                    <p>联系我们</p>
+                    <p>商务合作：BD@jiguo.com</p>
+                    <p>CEO邮箱：CEO@jiguo.com</p>
+                </a>
+
+            </li>
+            <h4>&copy;2016极果版权所有</h4>
+            <h5><a href="">回顶部</a></h5>
+        </ul>
+
+    </div>
+
+
+</body>
+
+</html>
+
+
+<script>
+    window.addEventListener('load', function () {
+
+
+
+        var ajax_ = new XMLHttpRequest() || new ActiveXObject('Microsoft.XMLHTTP');
+        ajax_.open('get', '../z-js/doT.json');
+        ajax_.send();
+        ajax_.onreadystatechange = function () {
+            if (ajax_.readyState == 4) {
+                if (ajax_.status == 200) {
+                    // 接收响应数据  转为 对象
+                    var data = JSON.parse(ajax_.responseText);
+                    // console.log(data);
+                    show(data.list);
+                } else {
+                    console.log('请求失败');
+                }
+            }
+        }
+
+
+
+        function show(data) {
+            var str = ''
+            for (var i = 0; i < data.length; i++) {
+                console.log(data[i]);
+                str += '<li>';
+                str += '<p>' + data[i].imgtitle + '</p>';
+                str += '<img src="' + data[i].imgurl + '">';
+                str += '<p>' + data[i].note + '</p>';
+                str += '</li>';
+            }
+            var ul = document.getElementsByClassName('list')[0];
+            ul.innerHTML = str;
+        }
+    })
+</script>
