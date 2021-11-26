@@ -1,0 +1,11 @@
+.T-faxiankuwan span:nth-of-type(1){
+   
+    border-bottom: none;
+
+}
+.T-faxiankuwan span:nth-of-type(2){
+   
+    border-bottom: 4px solid rgb(254, 84, 49);
+
+}
+
