@@ -1,0 +1,405 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: rgb(241,243,244); */
+}
+/* 轮播图按钮 */
+.swiper-container {
+    width: 600px;
+    height: 300px;
+    
+} 
+.swiper-container .swiper-button-prev{
+    position: relative;
+    top: 100px;
+    left: -30px;
+    color: gray;
+}
+.swiper-container .swiper-button-next{
+    position: relative;
+    top: 50px;
+   left: 1140px;
+   color: gray;
+}
+/* 头部 */
+header{
+    width: 1200px;
+    /* height: 70px; */
+    margin: 0 auto;
+    display: flex;
+    /* background-color: aqua; */
+
+}
+/* 头部logo */
+.z-left{
+    width:250px;
+    height: 70px;
+    /* float: left; */
+}
+/* 头部nav */
+.z-middle{
+    width:700px;
+    height: 70px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+.z-middle>li>a{
+    text-decoration: none;
+}
+.z-middle>li>a:hover{
+    color: red;
+}
+.z-middle>li{
+line-height: 90px;
+font-size: 20px;
+color: black;
+
+
+}
+/* 头部注册 */
+.z-login{
+    text-decoration: none;
+    /* width: 100px;
+    height: 80px; */
+    border: 1px solid red;
+    /* float: right; */
+    color: red;
+    line-height: 90px;
+    font-size: 20px;
+    border-radius: 2px;
+    margin-left: 106px;
+}
+/* 第二部分 */
+.z-second{
+    width: 100%;
+    height: 300px;
+    background-size: 100%;
+    background: url(../z-img/original.jpg)no-repeat;
+}
+.z-second-01{
+    width: 220px;
+    height: 300px;
+    /* border: 1px solid red; */
+    margin: 0px 1040px;
+    animation: xiaobei 2s linear;
+}
+@keyframes xiaobei{
+    0%{
+        transform: translate(180px,-180px);
+    }
+}
+.z-second-01>p{
+            font-size: 25px;
+            line-height: 90px;
+}
+.z-second-01>p>a{
+    text-decoration: none;
+    color: white;
+}
+.z-second-01>span{
+    margin: 20px 8px;
+    color: white;
+    background-color: rgb(172, 160, 160,.3);
+}
+.z-second-01>span>input{
+    background:none; 
+    outline:none;
+     border:none;
+     color: white;
+}
+
+
+.z-second-01>p1{
+    font-size: 15px;
+    color: white;
+    /* margin: 0px 10px; */
+    line-height: 60px;
+}
+/* 立即申请按钮 */
+.z-btn{
+            width: 100px;
+            color: #fff;
+            text-align: center;
+            background-color: rgb(254,28,51);
+            padding: 10px 25px;
+            margin: 30px 30px;
+            color: white;
+        }
+        .z-btn>input{
+             background:none; 
+    outline:none;
+     border:none;
+     font-size: 9px;
+    color: white;
+        }
+        .z-btn>a{
+          text-decoration: none;
+          color: white;
+        }
+        /* 热门试用 */
+        .z-shiyong{
+            width: 1200px;
+            height: 50px;
+            font-size: 30px;
+            margin: 0 auto;
+        }
+        /* 第三部分 */
+        /* 轮播图 */
+        .z-thirdly{
+            width: 1200px;
+            height: 300px;
+             margin: 0 auto;
+             overflow: hidden;
+             
+        }
+
+         .swiper-container {
+            width: 100%;
+            height: 2rem;
+            position: relative;
+        } 
+        .swiper-slide{
+             display: flex;
+             /* justify-content: space-evenly; */
+        }
+        .swiper-slide>ul{
+            list-style: none;
+            display: flex;
+
+        }
+        .swiper-slide>ul>li{
+            width: 275px;
+            height: 280px;
+            border: 1px solid rgb(97, 80, 80,.2);
+            border-radius: 10px;
+            margin: 0 8px;
+          
+        }
+        .swiper-slide>ul>li>img{
+            width: 250px;
+            margin-left:13px ;
+            border-radius: 10px;
+         
+            
+        }
+
+        /* .swiper-slide>img {
+            width: 150px;
+            height: 2rem;
+        } */
+
+        .swiper-pagination {
+            position: absolute;
+            bottom: .1rem;
+            font-size: .1rem;
+        } 
+        .swiper-slide>ul>li>h4{
+             font-size: 20px;
+             text-align: center; 
+            
+            }
+        .swiper-slide>ul>li>span{
+             color: rgb(236, 74, 74);
+            border: 1px solid rgb(219, 100, 100);
+            border-radius: 2px;
+            margin: 38px;
+              
+            }
+            .swiper-slide>ul>li>p{
+                color: red;
+                text-align: center;
+            }
+            .swiper-slide>ul>li>p>span{
+                color:rgb(214, 90, 90);
+                
+            }
+            .swiper-slide>ul>li>h5{
+                color:red;
+                text-align: center;
+                font-weight: 400;
+            }
+            .swiper-button-prev{
+                margin: 20px 30px;
+            }
+            /* 第四部分 */
+            /* 报告精选 */
+            .jingxuan{
+                width: 1050px;
+            height: 50px;
+            margin: 0 370px;
+            /* background-color: gray; */
+            }
+            .jingxuan>ul{
+               list-style: none; 
+               font-size: 30px;
+               display: flex;
+               justify-content: space-between;
+            }
+            .jingxuan>ul>li>a{
+                font-size: 18px;
+                color: red;
+                text-decoration: none;
+            }
+            /* 图片部分 */
+            .z-fourth{
+                width: 1200px;
+                margin: 0 auto;
+            }
+            .z-fourth>ul{
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+            }
+            .z-fourth>li{
+                  /* justify-content: space-between; */
+                margin: 10px 20px;
+            }
+            .z-fourth>ul>li>img{
+               width: 220px;
+               height: 200px;
+               border-radius: 10px;
+            }
+            .z-fourth>ul>li>p{
+            font-size:20px;
+            }
+            .z-fourth>ul>li>span:nth-of-type(2){
+               margin-left:140px ;
+            }
+            /* 第二图片部分 */
+            .z-fourth2{
+                width: 1200px;
+                margin: 0 auto;
+            }
+            .z-fourth2>ul{
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+            }
+            /* .z-fourth2>li{ */
+                  /* justify-content: space-between; */
+                /* margin: 10px 20px; */
+            /* }  */
+            .z-fourth2>ul>li>img{
+               width: 220px;
+               height: 200px;
+               border-radius: 10px;
+            }
+            .z-fourth2>ul>li>p{
+            font-size:20px;
+            }
+            .z-fourth2>ul>li>span:nth-of-type(2){
+               margin-left:140px ;
+            }
+           /* 第五部分 */
+           .z-fifth{
+                width: 1200px;
+                margin: 0 auto;
+            }
+            .z-fifth>ul{
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+            }
+            .z-fifth>li{
+                  /* justify-content: space-between; */
+                /* margin: 10px 20px; */
+                width: 230px;
+                height: 300px;
+                border: 10px solid red;
+            }
+            .z-fifth>ul>li>img{
+               width: 220px;
+               height: 200px;
+               border-radius: 10px;
+            }
+            .z-fifth>ul>li>p{
+            font-size:20px;
+            }
+            /* .z-fifth>ul>li>span:nth-of-type(2){
+               margin-left:140px ;
+            } */
+            .daogou{
+                width: 1050px;
+            height: 70px;
+            margin: 0 370px;
+            /* background-color: gray; */
+            }
+            .daogou>ul{
+               list-style: none; 
+               font-size: 30px;
+               display: flex;
+               justify-content: space-between;
+            }
+            .daogou>ul>li>a{
+                font-size: 18px;
+                color: red;
+                text-decoration: none;
+            }
+            /* .z-sixth{
+                width: 100%;
+                height:100%;
+            } */
+           .z-seventh{
+               width: 100%;
+               height: 500px;
+               background-color: rgb(80,80,80);
+           }
+           .z-seventh>ul{
+               width: 1200px;
+               height: 500px;
+               margin: 0 auto;
+               list-style: none;
+               display: flex;
+               justify-content: space-between;
+           }
+           .z-seventh>ul>li{
+               margin-top: 50px;
+           }
+           .z-seventh>ul>li>h3{
+               color: white;
+           }
+           .z-seventh>ul>li>p{
+               color: rgb(197, 189, 189);
+               box-sizing: border-box;
+               padding: 10px;
+               
+           }
+              .z-seventh>ul>li>a{
+               text-decoration: none;
+               color: white;
+               
+           }
+           .z-seventh>ul>li>a>p{
+                color: rgb(197, 189, 189);
+               box-sizing: border-box;
+               padding: 10px;
+           }
+           .z-seventh>ul>h4{
+               position: absolute;
+               margin: 400px 500px;
+               color: white;
+           }
+        
+            .z-seventh>ul>h5{
+                 width: 50px;
+               height: 50px;
+               border-radius: 25px;
+               position: absolute;
+               margin: 450px 1000px;
+               color: white;
+               background-color: bisque;
+               border: 1px solid white; 
+           }
+           .z-seventh>ul>h5>a{
+              line-height: 50px;
+               text-decoration: none;
+               color: white;
+           }
+           
+
+
+
+
+
+

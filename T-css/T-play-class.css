@@ -1,0 +1,76 @@
+.T-faxiankuwan span:nth-of-type(1){
+   
+    border-bottom: none;
+
+}
+.T-faxiankuwan span:nth-of-type(2){
+   
+    border-bottom: none;
+
+}
+.T-faxiankuwan span:nth-of-type(3){
+   
+    border-bottom: 4px solid rgb(254, 84, 49);
+
+}
+.T-report-box{
+    background-color: rgb(247, 247, 247);
+}
+.T-wrap{
+    margin: 0 auto;
+    width: 1000px;
+    overflow: hidden;
+    border-radius: 10px;
+   padding-bottom: 40px;
+   
+}
+.T-wrap ul li{ 
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 1px solid rgba(204, 204, 204, 0.466);
+    background-color:white ;
+    padding-bottom: 40px;
+}
+.T-wrap dt{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.T-wrap dt::before{
+    width: 6px;
+    height: 25px;
+    background-color: rgb(254, 84, 49);
+    content: '';
+  transform: translate(-30px,24px);
+    display: block;
+    width: 6px;
+    height: 25px;
+}
+.T-wrap .list{
+    display: inline-block;
+    margin: 10px 20px; 
+   
+}
+.T-wrap .info{
+    color: rgb(165, 165, 165);
+    font-size: 14px;
+    margin-top: 15px;
+
+}
+.T-wrap .info:hover{
+   color: rgb(254, 84, 49); 
+}
+.T-wrap a{
+    text-decoration: none;
+}
+.T-wrap dd:nth-of-type(1){
+    border-bottom: 1px dashed rgba(204, 204, 204, 0.705);
+    padding-bottom: 15px;
+    margin-top: 20px;
+    padding-left: 15px;
+}
+
+.T-wrap dd:nth-of-type(2) .list{
+    margin:  0;
+    width: 150px;
+    text-align: center;
+}

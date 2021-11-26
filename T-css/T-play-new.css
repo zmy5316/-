@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+padding: 0;
+}
+header{
+    height: 75px;
+    background-color: blanchedalmond;
+}
+.T-faxiankuwan{
+    text-align: center;
+}
+.T-faxiankuwan p{
+    font-size: 40px;
+    height: 150px;
+    line-height: 150px;
+}
+.T-faxiankuwan a{
+  
+    text-decoration: none;
+    color: #a3a3a3;
+    font-size: 18px;
+    margin:0 60px;
+}
+.T-faxiankuwan span{
+    display: inline-block;
+    height: 30px;
+}
+.T-faxiankuwan span:nth-of-type(1){
+   
+    border-bottom: 4px solid rgb(254, 84, 49);
+
+}
+span .T-on
+{ 
+    color: rgb(254, 84, 49);
+}
+.T-main{
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+}
+.T-mydiv a{
+    text-decoration: none; 
+}
+.T-name{
+    color: black;
+    font-size: 14px;
+}
+.T-name span{
+    color: #a3a3a3;
+    font-size: 12px;
+}
+.T-mydiv{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: left;
+    width: 69%;
+    margin: 0 auto;
+}
+.T-mydiv li{
+    border:1px solid #ccc;
+    border-radius: 10px;
+    list-style-type: none;
+    margin: 20px 20px;
+    overflow: hidden;
+   
+}
+.T-info{
+    margin: 0 5px;
+}
+.T-price{
+    color: #fe5341;
+    display: inline-block;
+}
+.T-tip{
+    margin: 10px 0;
+}
+.T-right{
+    display: inline-block;
+    font-size: 12px;
+    color: #a3a3a3;
+    margin: 10px 0px;
+}
+.T-xin{
+    padding-left: 20px;
+    margin-left: 85px;
+    background:url(../img/xin.png) no-repeat 3px;
+}
+.T-look{  
+    padding-left: 20px;  
+    background:url(../img/reply.png) no-repeat 3px;
+}
+.T-playMore{
+    margin: auto;
+    padding-top: 20px;
+    height: 80px;
+    width: 116px;
+}
+
+.T-playMore a{
+    background: url(../img/more.png) no-repeat 0px 8px;
+    color: #fe5341;
+    text-decoration: none;
+    padding-left:20px;
+   
+}
+#yiru{
+    cursor:pointer;
+    animation:shan .8s infinite linear alternate;
+}
+@keyframes shan {
+    0% {background-color: white;}
+    100% {background-color: rgba(168, 168, 167, 0.26);}
+  }
+
+#jiazai{
+    background: url(../img/loading-icon.gif) no-repeat ;
+}
+  
+  
+
+
