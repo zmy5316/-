@@ -2,10 +2,7 @@
     margin: 0;
 padding: 0;
 }
-header{
-    height: 75px;
-    width: 100%;  background-color: blanchedalmond;
-}
+
 .T-main{
     margin-top: 50px;
     color: rgb(83, 83, 83);
@@ -18,6 +15,7 @@ header{
      border-radius: 8px;
      padding-bottom: 40px;
      float: left;
+     
 }
 .T-left span ,.T-right span{
     display: block;
@@ -48,6 +46,7 @@ header{
     border-radius: 8px;
     padding-bottom: 40px;
     float: left;
+ 
    
  
 }
