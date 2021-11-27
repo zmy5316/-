@@ -183,6 +183,7 @@ color: black;
             margin: 0 8px;
           
         }
+      
         .swiper-slide>ul>li>img{
             width: 250px;
             margin-left:13px ;
@@ -206,12 +207,14 @@ color: black;
              text-align: center; 
             
             }
-        .swiper-slide>ul>li>span{
-             color: rgb(236, 74, 74);
+            .z-baoguo{
+                margin:0 95px;
+            }
+       
+            .z-baoguo>span{
+                  color: rgb(236, 74, 74);
             border: 1px solid rgb(219, 100, 100);
             border-radius: 2px;
-            margin: 38px;
-              
             }
             .swiper-slide>ul>li>p{
                 color: red;
@@ -406,6 +409,18 @@ color: black;
                margin-left:5px ;
                color: #000;
                /* color: white; */
+           }
+           /* 添加蒙版 */
+           .z-mb{
+              width: 220px;
+              height: 277px;
+              border: 1px solid red;
+              background-color: rgb(41, 37, 37,.2);
+              position: absolute; 
+              border-radius: 5px;
+              top: 775px;
+              left: 160px;
+            
            }
           
            
