@@ -2,7 +2,12 @@
     margin: 0;
 padding: 0;
 }
+header{
+    height: 75px;
 
+  
+    /* background-color: blanchedalmond; */
+}
 .T-faxiankuwan{
     text-align: center;
 }
@@ -55,16 +60,11 @@ span .T-on
     width: 69%;
     margin: 0 auto;
 }
-.T-mydiv ul{
-    display: flex;
-}
-
 .T-mydiv li{
     border:1px solid #ccc;
     border-radius: 10px;
     list-style-type: none;
-    margin: 20px 10px;
-   flex-flow: column wrap;
+    margin: 20px 15px;
     overflow: hidden;
     width: 230px;
    
@@ -88,11 +88,11 @@ span .T-on
 .T-xin{
     padding-left: 20px;
     margin-left: 85px;
-    background:url(../img/xin.png) no-repeat 3px;
+    background:url(../z-img/zan.png) no-repeat 3px;
 }
 .T-look{  
     padding-left: 20px;  
-    background:url(../img/reply.png) no-repeat 3px;
+    background:url(../z-img/reply.png) no-repeat 3px;
 }
 .T-playMore{
     margin: auto;
@@ -102,7 +102,7 @@ span .T-on
 }
 
 .T-playMore a{
-    background: url(../img/more.png) no-repeat 0px 8px;
+    background: url(../z-img/more.png) no-repeat 0px 8px;
     color: #fe5341;
     text-decoration: none;
     padding-left:20px;
@@ -117,8 +117,11 @@ span .T-on
     100% {background-color: rgba(168, 168, 167, 0.26);}
   }
 
+/* .jiazai{
+    background: url(../z-img/loading-icon.gif);
+} */
 #jiazai{
-    background: url(../img/loading-icon.gif) no-repeat ;
+    background: url(../z-img/loading-icon.gif) no-repeat ;
 }
   
   

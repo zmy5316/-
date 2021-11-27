@@ -1,0 +1,88 @@
+ul, ol, li {
+  list-style-type: none;
+}
+
+.x_maddle {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f7f7;
+}
+
+.x_maddle .x_banner {
+  text-align: center;
+  margin: 0 auto;
+  width: 1000px;
+  height: 120px;
+  background-color: #fff;
+}
+
+.x_maddle .x_banner .x_free {
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+
+.x_maddle .x_banner .x_checkout {
+  justify-content: center;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.x_maddle .x_banner .x_checkout .x_dazongshiyong, .x_maddle .x_banner .x_checkout .x_fenxiang {
+  font-size: 16px;
+}
+
+.x_maddle .x_banner .x_checkout .x_fenxiang {
+  margin-left: 100px;
+}
+
+.x_maddle .x_banner .x_box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.x_maddle .x_banner .x_box .x_quanbu, .x_maddle .x_banner .x_box .x_shengqingzhong, .x_maddle .x_banner .x_box .x_shiyongzhong, .x_maddle .x_banner .x_box .x_yijieshu {
+  font-size: 12px;
+  margin-right: 100px;
+}
+
+.x_maddle .x_check .x_quanbu_content, .x_maddle .x_check .x_shengqingzhong_content, .x_maddle .x_check .x_shiyongzhong_content, .x_maddle .x_check .x_yijieshu_content {
+  transform: translateX(12.5%);
+  margin: 0 auto;
+}
+
+.x_maddle .x_check .x_quanbu_content li, .x_maddle .x_check .x_shengqingzhong_content li, .x_maddle .x_check .x_shiyongzhong_content li, .x_maddle .x_check .x_yijieshu_content li {
+  float: left;
+  width: 300px;
+  height: 320px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #c4bfbf;
+}
+
+.x_maddle .x_check .x_quanbu_content li img, .x_maddle .x_check .x_shengqingzhong_content li img, .x_maddle .x_check .x_shiyongzhong_content li img, .x_maddle .x_check .x_yijieshu_content li img {
+  width: 300px;
+  height: 135px;
+}
+
+.x_maddle .x_check .x_quanbu_content li h4, .x_maddle .x_check .x_shengqingzhong_content li h4, .x_maddle .x_check .x_shiyongzhong_content li h4, .x_maddle .x_check .x_yijieshu_content li h4 {
+  color: #b1aeae;
+}
+
+.x_maddle .x_check .x_quanbu_content li .x_span_content, .x_maddle .x_check .x_shengqingzhong_content li .x_span_content, .x_maddle .x_check .x_shiyongzhong_content li .x_span_content, .x_maddle .x_check .x_yijieshu_content li .x_span_content {
+  display: flex;
+  color: hotpink;
+}
+
+.x_maddle .x_check .x_quanbu_content li .x_span_content span, .x_maddle .x_check .x_shengqingzhong_content li .x_span_content span, .x_maddle .x_check .x_shiyongzhong_content li .x_span_content span, .x_maddle .x_check .x_yijieshu_content li .x_span_content span {
+  font-style: 12px;
+  width: 100px;
+  padding: 10px;
+  border: 1px solid  pink;
+}
+
+.x_maddle .x_check .x_quanbu_content li p, .x_maddle .x_check .x_shengqingzhong_content li p, .x_maddle .x_check .x_shiyongzhong_content li p, .x_maddle .x_check .x_yijieshu_content li p {
+  color: hotpink;
+  font-size: 12px;
+}
