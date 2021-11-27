@@ -1,0 +1,92 @@
+* {
+ margin: 0;
+ padding: 0;
+}
+ul,li,ol {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color:black;
+}
+button {
+    outline: none;
+}
+input {
+    outline: none;
+}
+//渲染部分样式
+body {
+    background-color: #f7f7f7;
+}
+.x_maddle {
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    .x_banner {
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        width: 1000px;
+        background-color: #fff;
+        margin-bottom: 20px;
+        .x_daogou{
+            font-size: 21px;
+            margin-bottom: 40px;
+        }
+        .x_checkout {
+            display: flex;
+            font-size: 12px;
+            justify-content: center;
+            .x_zuixin {
+                margin-right: 200px;
+            }
+        }
+    }
+  
+  
+ 
+}
+
+   .x_check1 {
+    .x_zuixin_content {
+        width: 1000px;
+        transform: translateX(16%);
+          li {
+             float: left;
+              margin-right: 20px;
+              margin-bottom: 20px;
+              width: 300px;
+              height: 220px;
+              background: url(../../Ajax/极果/素材/图片/css/img/listbg.jpg) no-repeat 10px 10px;
+            //   background-color: rgb(185, 153, 153);
+            border: 1px solid rgb(216, 212, 212);
+              img {
+                  width: 300px;
+                  height: 135px;
+              }
+              h4 {
+                  width: 100%;
+                  margin-top: 10px;
+                  margin-bottom: 10px;
+              }
+              p {
+                  display: flex;
+                  position: relative;
+                  span {
+                      position: absolute;
+                      right: 30px;
+                      &:nth-child(1) {
+                          margin-right: 50px;
+                      }
+                      
+                  }
+              }
+          }
+   }
+   .x_zuire_content {
+       @extend .x_zuixin_content;
+   }
+      
+}

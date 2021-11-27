@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/guid.min.css" />
+  <link rel="stylesheet" href="../../../../z-css/z01.首页.css">
+  <script src="../js/guid.js"></script>
+  <script src="../../Ajax/极果/js/jquery-3.5.1.min.js"></script>
+
+  <style>
+    .x_zuixin_content li:hover,
+    .x_zuire_content li:hover {
+      animation: change 2s infinite;
+    }
+
+    @keyframes change {
+      0% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.2);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <a name=""></a>
+    <!-- 左边logo -->
+    <div class="z-left">
+      <a href=""><img src="../../Ajax/极果/素材/图片/img/logonew.png" width="150px" height="70px"></a>
+
+    </div>
+    <!-- 首页标题 -->
+    <ul class="z-middle">
+      <li><a href="../../../../z-html/z01.首页.html">首页</a></li>
+      <li><a href="../../../../T-play/T-new.html">酷玩</a></li>
+      <li><a href="../../../../z-html/z-.7导购详情页.html">导购</a></li>
+      <li><a href="../../143/test/test.html">试用</a></li>
+      <li><a href="../../../../T-report/new.html">报告</a></li>
+    </ul>
+    <!-- 右边注册栏 -->
+    <div class="z-right">
+      <a href="../../../../z-html/z-.注册.html" class="z-login">注册</a>
+      <!-- <a href="#" class="z-search">搜索</a> -->
+    </div>
+  </header>
+
+  <div class="x_maddle">
+    <div class="x_banner">
+      <div class="x_daogou">导购清单</div>
+      <div class="x_checkout">
+        <div class="x_zuixin">最热</div>
+        <div class="x_zuire">最新</div>
+      </div>
+    </div>
+    <div class="x_check1">
+      <div class="x_zuixin_content"></div>
+      <div class="x_zuire_content"></div>
+    </div>
+  </div>
+
+
+  <div class="z-seventh">
+    <ul>
+      <li>
+        <img src="../../Ajax/极果/素材/图片/img/code.png">
+      </li>
+      <li>
+        <img src="../../Ajax/极果/素材/图片/img/logoImg.jpg">
+        <p>全球酷玩试用导购平台</p>
+        <p>酷 新奇 好玩 品质</p>
+        <p>微信添加"JquoJguo"</p>
+        <p>获取我们服务</p>
+      </li>
+      <li><a href="../../../../T-help.html">
+          <h3>免费试用</h3>
+          <p>试用流程</p>
+          <p>如何提高成功率</p>
+        </a>
+
+      </li>
+      <li>
+        <h3>友情链接</h3>
+        <p>智东西 WEIBUSI</p>
+        <p> 搜狐IT 腾讯科技</p>
+        <p>搜狐数码 凤凰科技</p>
+        <p>泡泡网 PConline</p>
+        <p>ZUK社区 3W咖啡</p>
+        <p>极客公园 亿觅emie</p>
+        <p>果酷 易迅易启玩</p>
+      </li>
+      <li>
+        <h3>购买攻略</h3>
+        <p>美亚海淘教程</p>
+        <p>日亚海淘教程</p>
+        <p>海淘转运攻略</p>
+        <p>kickstarter众筹购买攻略</p>
+        <p>indiegogo众筹购买攻略</p>
+      </li>
+      <li>
+        <a href="../../../../T-about.html">
+          <h3>厂商合作</h3>
+          <p>关于极果</p>
+          <p>联系我们</p>
+          <p>商务合作：BD@jiguo.com</p>
+          <p>CEO邮箱：CEO@jiguo.com</p>
+        </a>
+
+      </li>
+      <h4>&copy;2016极果版权所有</h4>
+      <h5><a href="">回顶部</a></h5>
+    </ul>
+
+  </div>
+</body>
+
+</html>
+
+
+
+
+<script id="copy" type="text/html">
+  {{each value}}
+  <li>
+    <img src="{{$value.img}}" alt="" />
+    <h4>{{$value.text}}</h4>
+    <p>
+      <span id="q2"
+        ><img
+          src="../../Ajax/极果/素材/图片/css/img/xin.png"
+          style="width: 20px; height: 20px;"
+          alt=""
+        />{{$value.like}}</span
+      >
+      <span id="q2"
+        ><img
+          src="../../Ajax/极果/素材/图片/css/img/reply.png"
+          style="width: 20px; height: 20px;"
+          alt=""
+        />{{$value.words}}</span
+      >
+    </p>
+  </li>
+  {{/each}}
+</script>
+<script src="../../Ajax/极果/js/template-web.js"></script>
+<script>
+  //最新
+  var oajax = new XMLHttpRequest();
+  oajax.open("get", "http://192.168.31.5:3000/guid/new", true);
+  oajax.send();
+  oajax.onreadystatechange = function () {
+    if (oajax.readyState == 4) {
+      if (oajax.status == 200) {
+        var res = JSON.parse(oajax.responseText);
+        add_html(res);
+      }
+    }
+  };
+  function add_html(res) {
+    console.log(res);
+    var html = template("copy", {
+      value: res,
+    });
+    document.getElementsByClassName("x_zuixin_content")[0].innerHTML = html;
+  }
+  //最热
+  var oajax1 = new XMLHttpRequest();
+  oajax1.open("get", "http://192.168.31.5:3000/guid/hot", true);
+  oajax1.send();
+  oajax1.onreadystatechange = function () {
+    if (oajax1.readyState == 4) {
+      if (oajax1.status == 200) {
+        var res = JSON.parse(oajax1.responseText);
+        add_html1(res);
+      }
+    }
+  };
+  function add_html1(res) {
+    console.log(res);
+    var html = template("copy", {
+      value: res,
+    });
+    document.getElementsByClassName("x_zuire_content")[0].innerHTML = html;
+  }
+</script>
+<script>
+  //tab栏切换
+  var ulli = document.querySelector('.x_checkout').querySelectorAll('div');
+  console.log(ulli);
+  var divs = document.querySelector('.x_check1').querySelectorAll('div');
+  console.log(divs);
+  for (var i = 0; i < ulli.length; i++) {
+    ulli[i].setAttribute('index', i);
+    ulli[i].addEventListener('click', function () {
+      for (var i = 0; i < ulli.length; i++) {
+        ulli[i].style.borderBottom = "";
+      }
+      this.style.borderBottom = "1px solid orange";
+      var index = this.getAttribute('index');
+      for (var i = 0; i < divs.length; i++) {
+        divs[i].style.display = 'none';
+      }
+      divs[index].style.display = 'block';
+    })
+  }
+</script>

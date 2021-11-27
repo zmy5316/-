@@ -1,0 +1,100 @@
+ul,ol,li {
+    list-style-type: none;
+}
+
+.x_maddle {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f7f7;
+    .x_banner {
+        text-align: center;
+        margin: 0 auto;
+        width: 1000px;
+        height: 120px;
+      background-color: #fff;
+        .x_free {
+            font-size: 21px;
+            margin-bottom: 20px;
+        }
+            .x_checkout {
+                justify-content: center;
+                display: flex;
+                margin-bottom: 20px;
+                .x_dazongshiyong {
+                    font-size: 16px;
+                }
+                .x_fenxiang {
+                    margin-left: 100px;
+                    @extend .x_dazongshiyong
+                }
+            }
+        
+        .x_box {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            .x_quanbu {
+                font-size: 12px;
+                margin-right: 100px;
+            }
+            .x_shengqingzhong {
+                @extend .x_quanbu;
+            }
+            .x_shiyongzhong {
+                @extend .x_quanbu;
+            }
+            .x_yijieshu {
+                @extend .x_quanbu;
+            }
+        }
+        
+    }
+    
+       .x_check {
+        .x_quanbu_content {
+            transform: translateX(12.5%);
+           margin: 0 auto;
+            li {
+                float: left;
+                width: 300px;
+                height: 320px;
+                margin-right: 20px;
+                margin-bottom: 20px;
+                border:1px solid rgb(196, 191, 191);
+                img {
+                    width: 300px;
+                    height: 135px;
+                }
+                h4 {
+                    color:rgb(177, 174, 174);
+                }
+                .x_span_content {
+                    display: flex;
+                    color: hotpink;
+                    span {
+                        font-style: 12px;
+                        width: 100px;
+                        padding: 10px;
+                        border: 1px solid  pink;
+                    }
+                }
+                p {
+                    color: hotpink;
+                    font-size: 12px;
+                }
+            }
+    
+        }
+        .x_shengqingzhong_content {
+            @extend .x_quanbu_content;
+        }
+        .x_shiyongzhong_content {
+            @extend .x_quanbu_content;
+        }
+        .x_yijieshu_content {
+            @extend .x_quanbu_content;
+        }
+    
+       }
+}
