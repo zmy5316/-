@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../Ajax/极果/js/jquery-3.5.1.min.js"></script>
+</head>
+<style>
+    body {
+  margin-top: 150px;
+}
+
+.loading-animate {
+  position: relative;
+  height: 45px;
+  width: 220px;
+  margin: 0 auto;
+  font-size: 14px;
+  display: none;
+}
+
+.loading-animate .animate-tips {
+  position: absolute;
+  right: 120px;
+  top: 16px;
+  color: rgba(15, 197, 92, .9);
+}
+
+@keyframes animateloadingleft {
+  0% {
+    right: 120px;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+@-webkit-keyframes animateloadingleft {
+  0% {
+    right: 120px;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+.loading-animate .animate-tips-start {
+  right: 0;
+  -webkit-animation: animateloadingleft 2.5s ;
+  animation:  change 2s infinite;;
+}
+
+.loading-animate b {
+  position: absolute;
+  top: 10px;
+  left: 40px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: rgba(15, 197, 92, 1);
+  -webkit-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+
+.loading-animate .animate-0,
+.loading-animate .animate-1,
+.loading-animate .animate-2,
+.loading-animate .animate-3,
+.loading-animate .animate-4 {
+  -webkit-animation: animateloading 2s ;
+  animation: animateloading 2s ;
+  opacity: 0;
+}
+
+.loading-animate .animate-0 {
+  -webkit-animation-delay: .2s;
+  animation-delay: .2s;
+}
+
+.loading-animate .animate-1 {
+  -webkit-animation-delay: .6s;
+  animation-delay: .6s;
+}
+
+.loading-animate .animate-2 {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.loading-animate .animate-3 {
+  -webkit-animation-delay: 1.4s;
+  animation-delay: 1.4s;
+}
+
+.loading-animate .animate-4 {
+  -webkit-animation-delay: 1.8s;
+  animation-delay: 1.8s;
+}
+
+@keyframes animateloading {
+  0% {
+    transform: rotate(5deg);
+    top: 30px;
+    left: 0px;
+    opacity: 0.5;
+  }
+  5% {
+    top: 20px;
+    opacity: 1;
+  }
+  40% {
+    top: 10px;
+  }
+  50% {
+    left: 38px;
+  }
+  100% {
+    transform: rotate(140deg);
+    opacity: 0;
+    top: 10px;
+    left: 100px;
+  }
+}
+
+@-webkit-keyframes animateloading {
+  0% {
+    -webkit-transform: rotate(5deg);
+    top: 30px;
+    left: 0px;
+    opacity: 0.5;
+  }
+  5% {
+    top: 20px;
+    opacity: 1;
+  }
+  40% {
+    top: 10px;
+  }
+  50% {
+    left: 38px;
+  }
+  100% {
+    -webkit-transform: rotate(140deg);
+    opacity: 0;
+    top: 10px;
+    left: 100px;
+  }
+}
+</style>
+<body>
+   <button onclick="x_animation()">开始</button>
+   
+    <script>
+ function x_animation() {
+  var $loading = null;
+  var init = function(text) {
+    var htmls = [
+      '<div class="loading-animate">',
+      '<b class="animate-0"></b>',
+      '<b class="animate-1"></b>',
+      '<b class="animate-2"></b>',
+      '<b class="animate-3"></b>',
+      '<b class="animate-4"></b>',
+      '<span class="animate-tips">',
+      '</span>',
+      '</div>'
+    ];
+    return htmls.join('');
+  
+  };
+
+  var pubMethod = {
+    init: function($target, text) {
+      $loading = $(init(text));
+      $target.append($loading);
+    },
+    show: function() {
+      if ($loading !== null) {
+        $loading.show();
+        $loading.find('.animate-tips').addClass('animate-tips-start');
+      }
+    },
+    hide: function() {
+      if ($loading !== null) {
+        $loading.hide();
+        $loading.find('.animate-tips').removeClass('animate-tips-start');
+      }
+    }
+  };
+
+  pubMethod.init($(document.body));
+  pubMethod.show();
+};
+    </script>
+    <script>
+    </script>
+</body>
+</html>

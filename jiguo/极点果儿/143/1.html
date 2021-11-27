@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span id="q1">500</span>
+    <span id="q2">120</span>
+    <button>提交</button>
+<script>
+//写代码就是玩，一定要无限发掘，有脑洞，随便怼
+//    var q1 = document.getElementById("q1");
+//    var q2 = document.getElementById("q2");
+   var button = document.getElementsByTagName("button")[0];
+   button.addEventListener("click" , function() {
+    document.getElementById("q1").innerHTML --;
+    document.getElementById("q2").innerHTML ++;
+    
+
+
+   })
+</script>
+</body>
+</html>
